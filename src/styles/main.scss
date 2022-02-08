@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
+
+$mainColor1: rgb(102, 102, 102);
+$mainColor2: rgb(211, 211, 211);
+
+body{
+  background-color: $mainColor1;
+  color: #fff;
+}
+
+.container{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.timer{
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  .timer_separator{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140px;
+    color: rgb(211, 211, 211);
+    text-align: center;
+  }
+  &_block{
+    width: 100px;
+    .time{
+      font-family: 'Kameron', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $mainColor2;
+      height: 150px;
+      font-size: 108px;
+    }
+    .title{
+      padding: 0px 5px;
+      text-align: center;
+      font-family: 'Kameron', serif;
+    }
+
+  }
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  .button{
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 25px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    &.start, &.stop, &.pause{
+      color: $mainColor2;
+      &:hover{
+        color: #fff;
+        font-size: 26px;
+      }
+    }
+    &.new{
+      color: $mainColor2;
+      &:hover:not([disabled]){
+        color: #fff;
+        font-size: 26px;
+      }
+      &:disabled{
+        background-color: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.results_block{
+  visibility: hidden;
+  padding-top: 100px;
+  font-family: 'Kameron', serif;
+  max-width: 250px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid $mainColor2;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  .results_info{
+    font-family: 'Kameron', serif;
+    margin: 10px 0px;
+    font-size: 16px;
+  }
+}

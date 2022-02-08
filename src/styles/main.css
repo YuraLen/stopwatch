@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap");
+body {
+  background-color: #666666;
+  color: #fff;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timer .timer_separator {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140px;
+  color: lightgray;
+  text-align: center;
+}
+
+.timer_block {
+  width: 100px;
+}
+
+.timer_block .time {
+  font-family: 'Kameron', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightgray;
+  height: 150px;
+  font-size: 108px;
+}
+
+.timer_block .title {
+  padding: 0px 5px;
+  text-align: center;
+  font-family: 'Kameron', serif;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.buttons .button {
+  font-family: 'Roboto Mono', monospace;
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 25px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttons .button.start, .buttons .button.stop, .buttons .button.pause {
+  color: lightgray;
+}
+
+.buttons .button.start:hover, .buttons .button.stop:hover, .buttons .button.pause:hover {
+  color: #fff;
+  font-size: 26px;
+}
+
+.buttons .button.new {
+  color: lightgray;
+}
+
+.buttons .button.new:hover:not([disabled]) {
+  color: #fff;
+  font-size: 26px;
+}
+
+.buttons .button.new:disabled {
+  background-color: none;
+  cursor: not-allowed;
+}
+
+.results_block {
+  visibility: hidden;
+  padding-top: 100px;
+  font-family: 'Kameron', serif;
+  max-width: 250px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+}
+
+.results_block .results_info {
+  font-family: 'Kameron', serif;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+/*# sourceMappingURL=main.css.map */
